@@ -14,11 +14,12 @@ export class HomeComponent {
   playVideo(): void {
     const video = this.videoElement.nativeElement;
 
-    video.muted = false;
-    video.play().then(() => {
-      this.showPlayButton = false;
-    }).catch(err => {
-      console.error('Erro ao reproduzir o vídeo:', err);
-    });
+    video.play()
+      .then(() => {
+        console.log('Vídeo reproduzido com sucesso');
+      })
+      .catch(err => {
+        console.error('Erro ao reproduzir o vídeo:', err);
+      });
   }
 }
