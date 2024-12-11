@@ -2,10 +2,7 @@
   <button *ngIf="showPlayButton" (click)="playVideo()" class="play">
     <lucide-icon name="play"></lucide-icon>
   </button>
-
-  <div class="background-block"></div>
-
-  <video #videoElement autoplay loop muted>
+  <video #videoElement loop muted>
     <source src="/video1.mp4" type="video/mp4" />
     Seu navegador não suporta o elemento de vídeo.
   </video>
