@@ -4,7 +4,14 @@ justify-content: center;
 
 video{
   width: 100%;
+  object-fit: cover;
+  -webkit-transform: translateZ(0); /* Corrige problemas de renderização no Safari */
+  -webkit-overflow-scrolling: touch;
 }
+}
+
+video::-webkit-media-controls {
+  display: none !important; /* Remove os controles padrão do Safari */
 }
 
 .play{

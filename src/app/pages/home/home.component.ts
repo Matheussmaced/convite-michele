@@ -17,6 +17,7 @@ export class HomeComponent {
     video.play()
       .then(() => {
         console.log('Vídeo reproduzido com sucesso');
+        this.showPlayButton = false
       })
       .catch(err => {
         console.error('Erro ao reproduzir o vídeo:', err);
