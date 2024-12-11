@@ -1,0 +1,61 @@
+.video-background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh; /* O vídeo ocupa toda a altura da tela */
+  overflow: hidden;
+
+  background-color: black;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+video::-webkit-media-controls {
+  display: none !important; /* Remove os controles padrão do Safari */
+}
+
+.play {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  right: 0.4rem;
+  top: 1rem;
+  color: azure;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.interactive-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* Camada que fica sobre o vídeo, mas abaixo dos links */
+  pointer-events: none; /* Desabilita interações enquanto o vídeo não está sendo reproduzido */
+}
+
+.buttons {
+  display: flex;
+  gap: 1.8rem;
+  position: absolute;
+  bottom: 6.3rem;
+  z-index: 3;
+}
+
+.button-link {
+  padding: 2.3rem;
+  border-radius: 50%;
+  background-color: transparent;
+  z-index: 3;
+  cursor: pointer;
+}
