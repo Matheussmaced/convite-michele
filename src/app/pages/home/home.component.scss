@@ -17,6 +17,16 @@ video{
   right: 0.4rem;
   top: 1rem;
   color: azure;
+
+  z-index: 3;
+}
+
+.background-block{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+  z-index: 2;
 }
 
 .buttons{

@@ -1,12 +1,14 @@
 <div class="video-background">
-  <video #videoElement autoplay loop muted>
-    <source src="/video1.mp4" type="video/mp4" />
-    Seu navegador não suporta o elemento de vídeo.
-  </video>
   <button *ngIf="showPlayButton" (click)="playVideo()" class="play">
     <lucide-icon name="play"></lucide-icon>
   </button>
 
+  <div class="background-block"></div>
+
+  <video #videoElement autoplay loop muted>
+    <source src="/video1.mp4" type="video/mp4" />
+    Seu navegador não suporta o elemento de vídeo.
+  </video>
   <div class="buttons">
     <a
     href="https://www.google.com.br/maps/place/Raissa+Festas/@-6.9452009,-38.9721203,17z/data=!3m1!4b1!4m6!3m5!1s0x7a3eb2be5e51ca5:0xb96712c866cfd7fe!8m2!3d-6.9452062!4d-38.9695454!16s%2Fg%2F11hfmygy6j?entry=ttu&g_ep=EgoyMDI0MTIwOS4wIKXMDSoASAFQAw%3D%3D"
