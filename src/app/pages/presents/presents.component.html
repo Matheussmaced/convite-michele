@@ -1,5 +1,8 @@
 <div class="video-background">
-  <!-- Botão para iniciar a reprodução do vídeo -->
+  <button *ngIf="showPlayButton" routerLink="/home" class="back">
+    <lucide-icon name="circle-arrow-left"></lucide-icon>
+  </button>
+
   <button *ngIf="showPlayButton" (click)="playVideo()" class="play">
     <lucide-icon name="play"></lucide-icon>
   </button>
@@ -9,7 +12,7 @@
 
   <!-- Vídeo -->
   <video #videoElement loop autoplay playsinline preload="auto" >
-    <source src="/video1.mp4" type="video/mp4" />
+    <source src="/video2.mp4" type="video/mp4" />
     Seu navegador não suporta o elemento de vídeo.
   </video>
 </div>
