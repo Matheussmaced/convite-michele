@@ -25,6 +25,8 @@ export class HomeComponent implements AfterViewChecked  {
     const video = this.videoElement.nativeElement;
     const layer = this.interactiveLayer.nativeElement;
 
+    video.muted = false;
+
     video.play()
       .then(() => {
         this.showPlayButton = false; // Esconde o botão de play
