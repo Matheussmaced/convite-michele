@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 100vh; /* O vídeo ocupa toda a altura da tela */
+  height: 83vh; /* O vídeo ocupa toda a altura da tela */
   overflow: hidden;
 
   background-color: black;
@@ -12,7 +12,7 @@
 video {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+
   position: absolute;
   z-index: 1;
 }
